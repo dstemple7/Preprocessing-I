@@ -244,19 +244,15 @@ nav a:hover {
 }
 #middle-content .row {
   display: flex;
+  flex-wrap: wrap;
 }
 #middle-content .column {
-  flex: 50%;
-}
-#middle-content #Listen {
   width: 50%;
-  padding: 3%;
 }
-#middle-content #Stuff {
-  display: flex;
-  width: 50%;
-  align-items: center;
-  padding: 3%;
+@media (max-width: 1050px) {
+  #middle-content .column {
+    width: 100%;
+  }
 }
 #middle-content h2 {
   font-family: 'Permanent Marker', cursive;
@@ -269,7 +265,7 @@ nav a:hover {
   font-size: 1.5rem;
 }
 #middle-content li {
-  width: 55%;
+  width: 200%;
   border: 1px solid black;
 }
 @media (max-width: 1050px) {
