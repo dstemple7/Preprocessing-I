@@ -1,1 +1,280 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('IBM Plex Sans'), local('IBMPlexSans'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYXgKVElMYYaJe8bpLHnCwDKtdY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v1/92z8tBhPNqw79Ij1C9z1vBQv7mxrZh9NHHnUBkLNPUtGnP1WOg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'), url(https://fonts.gstatic.com/s/merriweather/v21/u-4n0qyriQwlOrhSvowK_l52xwNpXw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004Hao.ttf) format('truetype');
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 65%;
+  margin: 0 15%;
+  align-items: space-around;
+}
+nav a {
+  margin: 1%;
+  text-decoration: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #00CED1;
+}
+nav a:hover {
+  color: #008B8B;
+}
+#hero {
+  border-radius: 25px;
+  margin: 2%;
+}
+#top-content {
+  background-color: #008B8B;
+  width: 65%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 15%;
+}
+#top-content a {
+  display: flex;
+  width: 18%;
+  background-color: #00CED1;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin: 2%;
+  padding: 3%;
+  border-radius: 3px;
+}
+#top-content h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3rem;
+  margin: 0% 2%;
+}
+#top-content h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2rem;
+  margin: 2% 3%;
+}
+#top-content p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5rem;
+  margin: 2% 3%;
+}
+#middle-content {
+  width: 65%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 15%;
+}
+#middle-content h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+  margin: 2% 3%;
+}
+#middle-content p,
+#middle-content li {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5rem;
+}
+#bottom-content {
+  width: 65%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 15%;
+}
+#bottom-content h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5rem;
+  margin: 2% 3%;
+}
+#bottom-content table,
+#bottom-content th,
+#bottom-content td {
+  border: 1px solid black;
+}
+#bottom-content table {
+  width: 80%;
+}
+#bottom-content th {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+  margin: 25%;
+}
+#bottom-content p,
+#bottom-content td {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5rem;
+}
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 15%;
+  background-color: #00CED1;
+  font-size: 1.5rem;
+  align-items: center;
+}
