@@ -164,9 +164,9 @@ body {
 }
 nav {
   display: flex;
+  margin: 0 15%;
   justify-content: flex-end;
   width: 65%;
-  margin: 0 15%;
   align-items: space-around;
 }
 nav a {
@@ -179,18 +179,28 @@ nav a {
 nav a:hover {
   color: #008B8B;
 }
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.3rem;
+  }
+}
 #hero {
   border-radius: 25px;
   margin: 2%;
 }
+@media (max-width: 1050px) {
+  #hero {
+    display: none;
+  }
+}
 #top-content {
   background-color: #008B8B;
   width: 65%;
+  margin: 0 15%;
   display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  margin: 0 15%;
 }
 #top-content a {
   display: flex;
@@ -202,6 +212,12 @@ nav a:hover {
   margin: 2%;
   padding: 3%;
   border-radius: 3px;
+}
+@media (max-width: 500px) {
+  #top-content a {
+    width: 95%;
+    justify-items: center;
+  }
 }
 #top-content h1 {
   font-family: 'Permanent Marker', cursive;
@@ -219,12 +235,12 @@ nav a:hover {
   margin: 2% 3%;
 }
 #middle-content {
+  margin: 0 15%;
   width: 65%;
   display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  margin: 0 15%;
 }
 #middle-content h2 {
   font-family: 'Permanent Marker', cursive;
@@ -236,13 +252,23 @@ nav a:hover {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1.5rem;
 }
+#middle-content li {
+  width: 25%;
+  border: 1px solid black;
+}
+@media (max-width: 1050px) {
+  #middle-content li {
+    width: 100%;
+  }
+}
 #bottom-content {
   width: 65%;
-  display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: column;
+  display: flex;
   margin: 0 15%;
+  padding: 1%;
 }
 #bottom-content h2 {
   font-family: 'Permanent Marker', cursive;
@@ -255,26 +281,36 @@ nav a:hover {
   border: 1px solid black;
 }
 #bottom-content table {
-  width: 80%;
+  width: 90%;
 }
 #bottom-content th {
   font-family: 'Permanent Marker', cursive;
   font-size: 2rem;
-  margin: 25%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  #bottom-content th {
+    font-size: 1.2rem;
+    padding: 0%;
+  }
 }
 #bottom-content p,
 #bottom-content td {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1.5rem;
 }
+#bottom-content td {
+  padding: 0.5%;
+}
 footer {
+  margin: 0 15%;
   display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: column;
   width: 65%;
-  margin: 0 15%;
   background-color: #00CED1;
   font-size: 1.5rem;
   align-items: center;
+  padding: 1%;
 }
