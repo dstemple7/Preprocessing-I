@@ -264,8 +264,15 @@ nav a:hover {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1.5rem;
 }
+#middle-content ul {
+  width: 300%;
+}
+@media (max-width: 1050px) {
+  #middle-content ul {
+    width: 125%;
+  }
+}
 #middle-content li {
-  width: 200%;
   border: 1px solid black;
 }
 @media (max-width: 1050px) {

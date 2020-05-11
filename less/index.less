@@ -157,7 +157,7 @@ nav {
 		@media(max-width:1050px){
 			width:100%;
 	  }//media for column
-}
+	}
 	h2 {
 		font-family:@heading-font;
 		font-size:2rem;
@@ -167,8 +167,13 @@ nav {
 		font-family:@body-font;
 		font-size:1.5rem;
 	}//p, li
+	ul{
+		width:300%;
+		@media(max-width:1050px){
+			width:125%;
+	}//media
+}//ul
 	li {
-		width: 200%;
 		border: 1px solid black;
 		@media(max-width:1050px){
 			width:100%;
